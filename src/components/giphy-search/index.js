@@ -81,15 +81,15 @@ export default class GiphySearch extends Component {
 
 	render() {
 		return (
-			<div className="giphy-search-container">
+			<div className="giphenberg-search-container">
 				<form
-					className="giphy-search-form"
-					key="giphy-form"
+					className="giphenberg-search-form"
+					key="giphenberg-form"
 					onSubmit={ event => event.preventDefault() }
 				>
 					<PlainText
 						className= { classnames(
-							'giphenberg-giphy-search'
+							'giphenberg-search'
 						) }
 						value={ ! this.props.attributes.searchTerm ? '' : this.props.attributes.searchTerm }
 						onChange={ this.onChangeSearchTerm }

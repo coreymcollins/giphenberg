@@ -36,7 +36,7 @@ const GiphySearchResults = ( props ) => {
 	} );
 
 	return (
-		<ul className="giphy-results-list">
+		<ul className="giphenberg-results-list">
 			{ queryResults }
 		</ul>
 	)

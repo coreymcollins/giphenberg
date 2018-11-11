@@ -10,7 +10,7 @@ const GiphySearchResult = ( props ) => {
 
 	return (
 		<li
-			className={ result.id === savedGifID ? 'giphy-search-result selected' : 'giphy-search-result' }
+			className={ result.id === savedGifID ? 'giphenberg-search-result selected' : 'giphenberg-search-result' }
 			id={ result.id }
 			data-gif-preview={ result.images.downsized_medium.url }
 			data-gif-full={ result.images.downsized_medium.url }
@@ -25,7 +25,7 @@ const GiphySearchResult = ( props ) => {
 			>
 				<img
 					id={ `image-${ result.id }` }
-					className='giphy-result-gif'
+					className='giphenberg-result-gif'
 					src={ result.images.original_still.url }
 				/>
 			</a>

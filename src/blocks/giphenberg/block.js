@@ -27,7 +27,7 @@ registerBlockType( 'giphenberg/block-giphenberg', {
 		return [
 			!! props.isSelected && (
 				<div
-				key='giphy-gif-search'
+				key='giphenberg-gif-search'
 				className={ props.className }>
 					<h2 className="giphenberg-header">{ blockTitle }</h2>
 					<GiphySearch
@@ -39,7 +39,7 @@ registerBlockType( 'giphenberg/block-giphenberg', {
 				<div className="giphenberg-display">
 					{
 						props.attributes.savedGifID ? (
-							<img className="giphy-saved-image" src={ props.attributes.savedGifURL } />
+							<img className="giphenberg-saved-image" src={ props.attributes.savedGifURL } />
 						) : (
 							<div>
 								<h2 className="giphenberg-header">{ blockTitle }</h2>

@@ -4,20 +4,20 @@
 // Additional styles necessary to assist the editor.
 // Enqueued after style.scss.
 //--------------------------------------------------------------
-.giphy-search-container {
+.giphenberg-search-container {
 	margin-bottom: 15px;
 
 	+ img {
 		margin-top: 15px;
 	} // + img
 
-	.giphy-results-list {
+	.giphenberg-results-list {
 		column-count: 3;
 		column-gap: 5px;
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
-	} // .giphy-results-list
+	} // .giphenberg-results-list
 
 	img {
 		display: block;
@@ -30,7 +30,7 @@
 		}
 	}
 
-	.giphy-search-result {
+	.giphenberg-search-result {
 		border: 4px solid transparent;
 		transition: border 0.2s ease-in-out;
 
@@ -43,12 +43,12 @@
 		}
 	}
 
-	.giphy-saved-image {
+	.giphenberg-saved-image {
 		display: block;
 		margin: 0 auto;
 	}
 
-	.giphenberg-giphy-search {
+	.giphenberg-search {
 		border: 1px solid #808080;
 		border-radius: 0;
 		padding: 10px;
@@ -69,7 +69,7 @@
 			}
 		}
 	}
-} // .giphy-search-container
+} // .giphenberg-search-container
 
 .wp-admin {
 
