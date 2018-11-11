@@ -15,14 +15,20 @@ const GiphySearchResult = ( props ) => {
 			data-gif-preview={ result.images.downsized_medium.url }
 			data-gif-full={ result.images.downsized_medium.url }
 			data-gif-static={ result.images.original_still.url }
-			onMouseEnter={ ( ( e ) => handleMouseEnter( { e, result } ) ) }
-			onMouseLeave={ ( ( e ) => handleMouseLeave( { e, result } ) ) }
-			onClick={ ( ( e ) => handleOnClick( { e, result } ) ) }
 		>
-			<img
-				id={ `image-${ result.id }` }
-				className='giphy-result-gif'
-				src={ result.images.original_still.url } />
+			<a
+				className='button-giphenberg-select'
+				href='#'
+				onMouseEnter={ ( ( e ) => handleMouseEnter( { e, result } ) ) }
+				onMouseLeave={ ( ( e ) => handleMouseLeave( { e, result } ) ) }
+				onClick={ ( ( e ) => handleOnClick( { e, result } ) ) }
+			>
+				<img
+					id={ `image-${ result.id }` }
+					className='giphy-result-gif'
+					src={ result.images.original_still.url }
+				/>
+			</a>
 		</li>
 	)
 }
