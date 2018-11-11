@@ -1,0 +1,48 @@
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+.giphy-search-container {
+  margin-bottom: 15px; }
+  .giphy-search-container + img {
+    margin-top: 15px; }
+  .giphy-search-container .giphy-results-list {
+    -webkit-column-count: 3;
+            column-count: 3;
+    -webkit-column-gap: 5px;
+            column-gap: 5px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+  .giphy-search-container img {
+    display: block;
+    margin: 0 auto;
+    opacity: 0.5;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    -o-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out; }
+    .giphy-search-container img:hover {
+      opacity: 1; }
+  .giphy-search-container .giphy-search-result {
+    border: 4px solid transparent;
+    -webkit-transition: border 0.2s ease-in-out;
+    -o-transition: border 0.2s ease-in-out;
+    transition: border 0.2s ease-in-out; }
+    .giphy-search-container .giphy-search-result.selected {
+      border: 4px solid #1ace7c; }
+      .giphy-search-container .giphy-search-result.selected img {
+        opacity: 1; }
+  .giphy-search-container .giphy-saved-image {
+    display: block;
+    margin: 0 auto; }
+  .giphy-search-container .giphenberg-giphy-search {
+    border: 1px solid #808080;
+    border-radius: 0;
+    padding: 10px; }
+
+.wp-admin .wp-block-giphenberg-block-giphenberg .giphenberg-header {
+  background: url("../assets/images/powered-by-giphy.gif") top right no-repeat !important;
+  min-height: 42px;
+  padding-right: 215px; }
