@@ -1,3 +1,25 @@
+# Giphenberg
+## Search for and display GIFs from Giphy in a Gutenberg block
+
+Giphenberg is a Giphy-integrated Gutenberg block to search for and display GIFs in your pages and posts. Simply enter a search term, select your GIF, and you're off to the races!
+
+### How To Use It
+#### Add The Block
+![](https://dl.dropbox.com/s/rqpegragxuntrxg/giphenberg-how-to01.gif?dl=0)
+
+Just like any other Gutenberg block, you can add this block when creating the layout of your page.
+
+#### Search and Select
+![](https://dl.dropbox.com/s/opij4wd5ly72xbx/giphenberg-how-to02.gif?dl=0)
+
+Search for the GIFs you want by keyword. Results are returned as still images which animate upon hover. Select the GIF you would like to use by clicking on it and it will receive a green border.
+
+Clicking outside of the block will display the GIF as it will be seen on the frontend.
+
+Clicking back into the block will allow you to deselect the current GIF, select another GIF, or start over with a fresh search.
+
+---
+
 This project was bootstrapped with [Create Guten Block](https://github.com/ahmadawais/create-guten-block).
 
 Below you will find some information on how to run scripts.
