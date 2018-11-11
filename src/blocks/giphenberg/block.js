@@ -1,11 +1,12 @@
 const { __ } = wp.i18n;
 const { registerBlockType } = wp.blocks;
 
+import icon from './icon';
 import GiphySearch from '../../components/giphy-search';
 
 registerBlockType( 'giphenberg/block-giphenberg', {
 	title: __( 'Giphenberg Giphy Search' ),
-	icon: 'shield',
+	icon,
 	category: 'common',
 	keywords: [
 		__( 'gif' ),
@@ -33,7 +34,7 @@ registerBlockType( 'giphenberg/block-giphenberg', {
 				</div>
 			),
 			! props.isSelected && (
-				<img className="giphy-saved-image" src={props.attributes.savedGifURL} />
+				<img className="giphy-saved-image" src={ props.attributes.savedGifURL } />
 			),
 		];
 	},
