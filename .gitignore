@@ -1,3 +1,8 @@
 /node_modules
 .DS_Store
 /.vscode/launch.json
+/.editorconfig
+/.eslintignore
+/.eslintrc.js
+/.eslintrc.json
+/.sass-lint.yml
