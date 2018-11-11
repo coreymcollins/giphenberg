@@ -69,6 +69,13 @@ export default class GiphySearch extends Component {
 			savedGifID: listItemID
 		} );
 
+		if ( document.getElementById( listItemID ).classList.contains( 'selected' ) ) {
+			setAttributes( {
+				savedGifURL: '',
+				savedGifID: ''
+			} );
+		}
+
 		document.getElementById( listItemID ).classList.toggle( 'selected' );
 	};
 
