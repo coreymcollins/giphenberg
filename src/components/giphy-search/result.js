@@ -17,7 +17,7 @@ const GiphySearchResult = ( props ) => {
 			data-gif-static={ result.images.original_still.url }
 		>
 			<a
-				className='button-giphenberg-select'
+				className='anchor-giphenberg-select'
 				href='#'
 				onMouseEnter={ ( ( e ) => handleMouseEnter( { e, result } ) ) }
 				onMouseLeave={ ( ( e ) => handleMouseLeave( { e, result } ) ) }
