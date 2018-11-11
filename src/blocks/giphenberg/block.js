@@ -4,6 +4,8 @@ const { registerBlockType } = wp.blocks;
 import icon from './icon';
 import GiphySearch from '../../components/giphy-search';
 
+const blockTitle = __( 'Insert a GIF from Giphy' );
+
 registerBlockType( 'giphenberg/block-giphenberg', {
 	title: __( 'Giphenberg Giphy Search' ),
 	icon,
@@ -27,14 +29,25 @@ registerBlockType( 'giphenberg/block-giphenberg', {
 				<div
 				key='giphy-gif-search'
 				className={ props.className }>
-					<h2 className="giphenberg-header">{ __( 'Insert a GIF from Giphy!' ) }</h2>
+					<h2 className="giphenberg-header">{ blockTitle }</h2>
 					<GiphySearch
 						{ ...props }
 					/>
 				</div>
 			),
 			! props.isSelected && (
-				<img className="giphy-saved-image" src={ props.attributes.savedGifURL } />
+				<div className="giphenberg-display">
+					{
+						props.attributes.savedGifID ? (
+							<img className="giphy-saved-image" src={ props.attributes.savedGifURL } />
+						) : (
+							<div>
+								<h2 className="giphenberg-header">{ blockTitle }</h2>
+								<p><em>{ __( 'Click to search for a GIF' ) }</em></p>
+							</div>
+						)
+					}
+				</div>
 			),
 		];
 	},
