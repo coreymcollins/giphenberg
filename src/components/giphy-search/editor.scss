@@ -53,6 +53,22 @@
 		border-radius: 0;
 		padding: 10px;
 	}
+
+	.anchor-giphenberg-select {
+		background-color: transparent;
+		border: none;
+		display: block;
+		padding: 0;
+
+		&:active,
+		&:focus,
+		&:hover {
+
+			img {
+				opacity: 1;
+			}
+		}
+	}
 } // .giphy-search-container
 
 .wp-admin {
