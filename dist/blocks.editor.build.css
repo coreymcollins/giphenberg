@@ -4,11 +4,11 @@
  * Can include things like variables and mixins
  * that are used across the project.
 */
-.giphy-search-container {
+.giphenberg-search-container {
   margin-bottom: 15px; }
-  .giphy-search-container + img {
+  .giphenberg-search-container + img {
     margin-top: 15px; }
-  .giphy-search-container .giphy-results-list {
+  .giphenberg-search-container .giphenberg-results-list {
     -webkit-column-count: 3;
             column-count: 3;
     -webkit-column-gap: 5px;
@@ -16,31 +16,38 @@
     list-style-type: none;
     margin: 0;
     padding: 0; }
-  .giphy-search-container img {
+  .giphenberg-search-container img {
     display: block;
     margin: 0 auto;
     opacity: 0.5;
     -webkit-transition: opacity 0.2s ease-in-out;
     -o-transition: opacity 0.2s ease-in-out;
     transition: opacity 0.2s ease-in-out; }
-    .giphy-search-container img:hover {
+    .giphenberg-search-container img:hover {
       opacity: 1; }
-  .giphy-search-container .giphy-search-result {
+  .giphenberg-search-container .giphenberg-search-result {
     border: 4px solid transparent;
     -webkit-transition: border 0.2s ease-in-out;
     -o-transition: border 0.2s ease-in-out;
     transition: border 0.2s ease-in-out; }
-    .giphy-search-container .giphy-search-result.selected {
+    .giphenberg-search-container .giphenberg-search-result.selected {
       border: 4px solid #1ace7c; }
-      .giphy-search-container .giphy-search-result.selected img {
+      .giphenberg-search-container .giphenberg-search-result.selected img {
         opacity: 1; }
-  .giphy-search-container .giphy-saved-image {
+  .giphenberg-search-container .giphenberg-saved-image {
     display: block;
     margin: 0 auto; }
-  .giphy-search-container .giphenberg-giphy-search {
+  .giphenberg-search-container .giphenberg-search {
     border: 1px solid #808080;
     border-radius: 0;
     padding: 10px; }
+  .giphenberg-search-container .anchor-giphenberg-select {
+    background-color: transparent;
+    border: none;
+    display: block;
+    padding: 0; }
+    .giphenberg-search-container .anchor-giphenberg-select:active img, .giphenberg-search-container .anchor-giphenberg-select:focus img, .giphenberg-search-container .anchor-giphenberg-select:hover img {
+      opacity: 1; }
 
 .wp-admin .wp-block .giphenberg-header {
   background: url("../assets/images/powered-by-giphy.png") top right/121px 42px no-repeat !important;
