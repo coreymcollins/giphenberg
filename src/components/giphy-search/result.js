@@ -20,7 +20,9 @@ const GiphySearchResult = ( props ) => {
 				className='anchor-giphenberg-select'
 				href='#'
 				onMouseEnter={ ( ( e ) => handleMouseEnter( { e, result } ) ) }
+				onFocus={ ( ( e ) => handleMouseEnter( { e, result } ) ) }
 				onMouseLeave={ ( ( e ) => handleMouseLeave( { e, result } ) ) }
+				onBlur={ ( ( e ) => handleMouseLeave( { e, result } ) ) }
 				onClick={ ( ( e ) => handleOnClick( { e, result } ) ) }
 			>
 				<img
