@@ -18,6 +18,18 @@ Clicking outside of the block will display the GIF as it will be seen on the fro
 
 Clicking back into the block will allow you to deselect the current GIF, select another GIF, or start over with a fresh search.
 
+### Setup Your Own App
+For now, you'll need to setup your own Giphy API Key to power this plugin.
+
+To setup Giphy API Keys, [follow their instructions at this link](https://developers.giphy.com/docs/#api-keys).
+
+In the `/src/components/index.js` file, you'll find this line:
+```
+const url = `https://api.giphy.com/v1/gifs/search?q=${ searchTerm }&api_key=YOURAPIKEY&limit=15`;
+```
+
+Replace `YOURAPIKEY` with your Giphy API key. Please refer to Giphy's documentation for usage restrictions and terms of service. I am not responsible for anything that happens with the use of your API key. Be smart!
+
 ---
 
 This project was bootstrapped with [Create Guten Block](https://github.com/ahmadawais/create-guten-block).
