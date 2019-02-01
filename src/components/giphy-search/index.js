@@ -24,7 +24,7 @@ export default class GiphySearch extends Component {
 	getResults = searchTerm => {
 		const { setAttributes } = this.props;
 
-		const url = `https://api.giphy.com/v1/gifs/search?q=${ searchTerm }&api_key=1N6XcKo15sM2n4EwksQmwG7vdPj3i2I0&limit=15`;
+		const url = `https://api.giphy.com/v1/gifs/search?q=${ searchTerm }&api_key=YOURAPIKEY&limit=15`;
 
 		return fetch( url )
 			.then(
