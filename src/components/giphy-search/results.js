@@ -14,6 +14,7 @@ const GiphySearchResults = ( props ) => {
 		gifOnClick,
 		results,
 		savedGifID,
+		savedGifAlt,
 	} = props;
 
 	let resultsArray = [];
@@ -31,6 +32,7 @@ const GiphySearchResults = ( props ) => {
 				handleMouseLeave={ gifMouseLeave }
 				handleOnClick={ gifOnClick }
 				savedGifID={ savedGifID }
+				savedGifAlt={ savedGifAlt }
 			/>
 		);
 	} );

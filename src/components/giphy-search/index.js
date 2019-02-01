@@ -24,7 +24,7 @@ export default class GiphySearch extends Component {
 	getResults = searchTerm => {
 		const { setAttributes } = this.props;
 
-		const url = `https://api.giphy.com/v1/gifs/search?q=${ searchTerm }&api_key=YOURAPIKEY&limit=15`;
+		const url = `https://api.giphy.com/v1/gifs/search?q=${ searchTerm }&api_key=1N6XcKo15sM2n4EwksQmwG7vdPj3i2I0&limit=15`;
 
 		return fetch( url )
 			.then(
@@ -62,17 +62,20 @@ export default class GiphySearch extends Component {
 	gifOnClick = clickedGIF => {
 		const { setAttributes } = this.props,
 			listItemID = clickedGIF.result.id,
-			fullURL = document.getElementById( listItemID ).dataset.gifFull;
+			fullURL = document.getElementById( listItemID ).dataset.gifFull,
+			altText = clickedGIF.result.title;
 
 		setAttributes( {
 			savedGifURL: fullURL,
-			savedGifID: listItemID
+			savedGifID: listItemID,
+			savedGifAlt: altText,
 		} );
 
 		if ( document.getElementById( listItemID ).classList.contains( 'selected' ) ) {
 			setAttributes( {
 				savedGifURL: '',
-				savedGifID: ''
+				savedGifID: '',
+				savedGifAlt: '',
 			} );
 		}
 
@@ -102,6 +105,7 @@ export default class GiphySearch extends Component {
 						gifMouseLeave={ this.gifMouseLeave }
 						gifOnClick={ this.gifOnClick }
 						savedGifID={ this.props.attributes.savedGifID }
+						savedGifAlt={ this.props.attributes.savedGifAlt }
 					/>
 				</form>
 			</div>

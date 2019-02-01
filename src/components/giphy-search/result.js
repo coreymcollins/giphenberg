@@ -29,6 +29,7 @@ const GiphySearchResult = ( props ) => {
 					id={ `image-${ result.id }` }
 					className='giphenberg-result-gif'
 					src={ result.images.original_still.url }
+					alt={ result.title }
 				/>
 			</a>
 		</li>

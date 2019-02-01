@@ -22,6 +22,9 @@ registerBlockType( 'giphenberg/block-giphenberg', {
 		savedGifID: {
 			type: 'string',
 		},
+		savedGifAlt: {
+			type: 'string',
+		},
 	},
 	edit: props => {
 		return [
@@ -39,7 +42,7 @@ registerBlockType( 'giphenberg/block-giphenberg', {
 				<div className="giphenberg-display">
 					{
 						props.attributes.savedGifID ? (
-							<img className="giphenberg-saved-image" src={ props.attributes.savedGifURL } />
+							<img className="giphenberg-saved-image" src={ props.attributes.savedGifURL } alt={ props.attributes.savedGifAlt } />
 						) : (
 							<div>
 								<h2 className="giphenberg-header">{ blockTitle }</h2>
@@ -53,7 +56,7 @@ registerBlockType( 'giphenberg/block-giphenberg', {
 	},
 	save: props => {
 		return (
-			<img src={ props.attributes.savedGifURL } />
+			<img src={ props.attributes.savedGifURL } alt={ props.attributes.savedGifAlt } />
 		);
 	},
 } );
