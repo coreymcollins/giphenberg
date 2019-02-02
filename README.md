@@ -31,6 +31,8 @@ const url = `https://api.giphy.com/v1/gifs/search?q=${ searchTerm }&api_key=YOUR
 
 Replace `YOURAPIKEY` with your Giphy API key. Please refer to Giphy's documentation for usage restrictions and terms of service. I am not responsible for anything that happens with the use of your API key. Be smart!
 
+Once you've entered your own Giphy API key, run `npm run build` and you're good to go!
+
 ---
 
 This project was bootstrapped with [Create Guten Block](https://github.com/ahmadawais/create-guten-block).
