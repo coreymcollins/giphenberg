@@ -33,6 +33,8 @@ Replace `YOURAPIKEY` with your Giphy API key. Please refer to Giphy's documentat
 
 Once you've entered your own Giphy API key, run `npm run build` and you're good to go!
 
+Read more here: [Giphenberg: The Gutenberg Giphy Block](https://www.coreymcollins.com/2019/02/01/giphenberg-gutenberg-giphy-block/).
+
 ---
 
 This project was bootstrapped with [Create Guten Block](https://github.com/ahmadawais/create-guten-block).
